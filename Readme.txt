@@ -15,4 +15,15 @@ that lists out the attributes that the output should contain.
 You have to configure it using Handlers and Formatters:
 -Handlers send the log messages to configured destinations like the standard output 
 stream or a file or over HTTP or to your email via SMTP.
-f
+UnitTest:
+https://towardsdatascience.com/level-up-your-code-with-python-decorators-c1966d78607---decorators
+@decorator
+def func():
+is equivalent to:
+def func():
+    …
+func = decorator(func)
+The difference manifests itself when you have more than one test method in your class. setUpClass and tearDownClass are run once for the whole class; setUp and tearDown are run before and after each test method.
+setUpClass is called only once and that is before all the tests, while setUp is called immediately before each and every test
+If the setUp() method it self raises an exception while executing tests, the test methods will not be executed. But If setUp() is executed successfully, tearDown() will run even if the test method is passed or not.
+If we import the module, then __name__ is the module's filename, without a directory path or file extension:
