@@ -27,3 +27,5 @@ The difference manifests itself when you have more than one test method in your 
 setUpClass is called only once and that is before all the tests, while setUp is called immediately before each and every test
 If the setUp() method it self raises an exception while executing tests, the test methods will not be executed. But If setUp() is executed successfully, tearDown() will run even if the test method is passed or not.
 If we import the module, then __name__ is the module's filename, without a directory path or file extension:
+verbosity argument to the main(). It’ll get the test result details displayed on the console.
+setUpClass() and tearDownClass() methods along with the @classmethod decorator. These methods enable us to set the values at the class level rather than at the method level. The values initialized at class level are shared between the test methods.
