@@ -15,3 +15,4 @@ that lists out the attributes that the output should contain.
 You have to configure it using Handlers and Formatters:
 -Handlers send the log messages to configured destinations like the standard output 
 stream or a file or over HTTP or to your email via SMTP.
+f
