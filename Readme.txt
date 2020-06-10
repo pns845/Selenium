@@ -28,5 +28,16 @@ test suite preparation:
 from module import the classes
 get all tests from classes using TestLoader().loadTestsfromTestcase()
 create a test suite ---final= [tc1,tc2]
-
 run the test suite using unittest.TextTestRunner(verbosity=2).run(final)
+---------------------------------------
+pytest
+need to install pytest-------- pip3 install pytest
+run only particular test:
+py.test testname -s-v        -s is for printing messages
+run the whole package
+py.test -s-v   it runs the whole package
+run only partcular test case from test script
+py.test modulename::testcasename
+------------------
+
+for the test runs to run in order you need to install py-test ordering module
