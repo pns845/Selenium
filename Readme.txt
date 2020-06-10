@@ -1,9 +1,3 @@
-Selenium Webdriver
-Module 23:
-MouseHover---ActionChains
-Drag and Drop
-Slider
-module 24
 -With the logging module imported, you can use something called a “logger” to log messages that you want to see
 -Logger:This is the class whose objects will be used in the application code directly to call the functions.
 -LogRecord: Loggers automatically create LogRecord objects that have all the information related 
@@ -29,3 +23,10 @@ If the setUp() method it self raises an exception while executing tests, the tes
 If we import the module, then __name__ is the module's filename, without a directory path or file extension:
 verbosity argument to the main(). It’ll get the test result details displayed on the console.
 setUpClass() and tearDownClass() methods along with the @classmethod decorator. These methods enable us to set the values at the class level rather than at the method level. The values initialized at class level are shared between the test methods.
+---------------------------------------------------------------------------
+test suite preparation:
+from module import the classes
+get all tests from classes using TestLoader().loadTestsfromTestcase()
+create a test suite ---final= [tc1,tc2]
+
+run the test suite using unittest.TextTestRunner(verbosity=2).run(final)
