@@ -1,3 +1,12 @@
+dropdown selection:
+value,index,visible text.
+navigation commands:
+it is used to refresh---driver.refresh()
+it is used to navigate back---driver.back()
+it is used to move forward---driver.forward()
+close--it closes the the browser window on which the focus is set.
+Actions class is an ability provided by Selenium for handling keyboard and mouse events.
+
 -With the logging module imported, you can use something called a “logger” to log messages that you want to see
 -Logger:This is the class whose objects will be used in the application code directly to call the functions.
 -LogRecord: Loggers automatically create LogRecord objects that have all the information related 
@@ -41,3 +50,27 @@ py.test modulename::testcasename
 ------------------
 
 for the test runs to run in order you need to install py-test ordering module
+@pytest.mark.run(order=1)
+-------------
+to run from different browsers from command line
+--------------------
+drag and drop:
+import Action Chains
+create object:  action_onj=ActionChains(driver)
+action_obj.movetoelement(source,target).perform()
+----------
+mousehover
+import Action Chains
+create object:  action_onj=ActionChains(driver)
+action_obj.movetoelement(element_name).perform()
+-----------
+to move to specific co-ordinate
+action_obj.move_to_offset(horizon,vertical)
+-------------
+unitTest Default methods-----setUp,setUp Class,tearDown,tearDownClass
+-----------
+pass means no operation to be done
+------------
+a='123'
+int(a)---converts it into int
+
