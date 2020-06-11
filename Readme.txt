@@ -83,3 +83,9 @@ a decorator @pytest.fixture(scope='')
 def a method to return the calue
 def browser(request):
    return request.config.getoption("--browser")
+----------------------
+By using the pytest.mark helper you can easily set metadata on your test functions. There are some builtin markers, for example:
+skip - always skip a test function
+skipif - skip a test function if a certain condition is met
+xfail - produce an “expected failure” outcome if a certain condition is met
+parametrize to perform multiple calls to the same test function.
