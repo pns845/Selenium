@@ -1,1 +1,22 @@
 Write a method to read data from webtable for specific row and column index using selenium.
+Method Resolution Order in Python---Method Resolution order is used in inheritance concepts
+----------------
+where class is inheriting multiple class and in all the parent class, same method is defined. 
+Child class is confused which method to call during run time. 
+So the MRO helps to resolve the issue.
+-----------------
+different ways to enter into textbox
+* driver.find_element_by_id(“val”).send_keys(“valuetoebeentered”)
+
+* other is using Action Class
+act=ActionChains(driver)
+act.send_keys_to_element(control,”Valuetobeenterd”)
+----------------
+webdriver exception
+* noalertPresent Exception
+* nosuchwindow Exception
+*nosuchelement exception
+*timeoutexception
+double click
+act=ActionChains(driver)
+act.double_click(control)
