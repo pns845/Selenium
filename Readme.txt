@@ -73,4 +73,13 @@ pass means no operation to be done
 ------------
 a='123'
 int(a)---converts it into int
-
+------------------------------------------
+RUNNING THROGH COMMAND LINE
+write in conftest 
+then add parser as argument
+parser.addoption("--browser")---which we need to get from command line
+parser.request.getoption("--browser")
+a decorator @pytest.fixture(scope='')
+def a method to return the calue
+def browser(request):
+   return request.config.getoption("--browser")
