@@ -9,6 +9,7 @@ Actions class is an ability provided by Selenium for handling keyboard and mouse
 
 -With the logging module imported, you can use something called a “logger” to log messages that you want to see
 -Logger:This is the class whose objects will be used in the application code directly to call the functions.
+the objects of the Logger class, which are instantiated using the module-level function logging.getLogger(name)
 -LogRecord: Loggers automatically create LogRecord objects that have all the information related 
 to the event being logged, like the name of the logger,the function, the line number, the message, and more
 -Handler: Handlers send the LogRecord to the required output destination, like the console or a file.
@@ -18,6 +19,9 @@ that lists out the attributes that the output should contain.
 You have to configure it using Handlers and Formatters:
 -Handlers send the log messages to configured destinations like the standard output 
 stream or a file or over HTTP or to your email via SMTP.
+inspect.stack[1][3]---gets the name of class/method from where the method is called.
+-add handler--Add handlers to the logger
+
 UnitTest:
 https://towardsdatascience.com/level-up-your-code-with-python-decorators-c1966d78607---decorators
 @decorator
