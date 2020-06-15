@@ -93,3 +93,14 @@ skip - always skip a test function
 skipif - skip a test function if a certain condition is met
 xfail - produce an “expected failure” outcome if a certain condition is met
 parametrize to perform multiple calls to the same test function.
+-------------------------------------
+framework:
+conftest file is always placed in tescase package
+autouse--- it will be instantiated before other fixtures within the same scope.
+An optional parameter to the fixture decorator is ‘autouse’.
+It defaults to ‘False’.
+With the value of ‘False’, tests that wish to use the fixture need to either name it in their parameter list, or have a use fixtures decorator applied to the test.
+With the value set to ‘True’, all tests in this session just use the fixture automatically.
+https://pythontesting.net/framework/pytest/pytest-fixtures-nuts-bolts/#return_value
+------------------------------------
+
