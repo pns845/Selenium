@@ -4,7 +4,7 @@ navigation commands:
 it is used to refresh---driver.refresh()
 it is used to navigate back---driver.back()
 it is used to move forward---driver.forward()
-close--it closes the the browser window on which the focus is set.
+close--it closes the browser window on which the focus is set.
 Actions class is an ability provided by Selenium for handling keyboard and mouse events.
 
 -With the logging module imported, you can use something called a “logger” to log messages that you want to see
