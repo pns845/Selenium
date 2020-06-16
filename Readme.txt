@@ -103,4 +103,10 @@ With the value of ‘False’, tests that wish to use the fixture need to either
 With the value set to ‘True’, all tests in this session just use the fixture automatically.
 https://pythontesting.net/framework/pytest/pytest-fixtures-nuts-bolts/#return_value
 ------------------------------------
-
+A method is a function declared inside class definition and has a variable self passed as a first parameter,to be able to let the instance of that class access it.
+@classmethod--
+https://medium.com/@rahulkp220/methods-classmethods-and-staticmethods-in-python-4f65c0e0d417
+let the class know that we are going to pass a classmethod?
+---------------------------
+conftest.py is a file which resides at base of your test directory tree. In this file you can store all test fixtures and these are then automatically discovered by Pytest, so you don't even need to import them.
+This is also helpful if you need to share data between multiple tests — just create fixture that returns the test data.
