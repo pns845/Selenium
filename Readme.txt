@@ -110,3 +110,5 @@ let the class know that we are going to pass a classmethod?
 ---------------------------
 conftest.py is a file which resides at base of your test directory tree. In this file you can store all test fixtures and these are then automatically discovered by Pytest, so you don't even need to import them.
 This is also helpful if you need to share data between multiple tests — just create fixture that returns the test data.
+traceback.print()--This function prints a stack trace from its invocation point. The optional f argument can be used to specify an alternate stack frame to start. The optional limit and file arguments have the same meaning as for print_exception().
+
